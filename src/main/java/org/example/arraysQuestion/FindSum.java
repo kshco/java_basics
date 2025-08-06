@@ -2,7 +2,7 @@ package org.example.arraysQuestion;
 
 public class FindSum {
     public static void main(String[] args) {
-        int arr[] = {1, 2, 5, 3, 6};
+        int arr [] = {1, 2, 5, 3, 6};
         int target = 5;
         for(int i =0;i<arr.length;i++){
             for(int j=i+1;j<arr.length;j++){

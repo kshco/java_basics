@@ -6,15 +6,23 @@ public class CheckPallindrom {
     public static void main(String[] args) {
         String s= "madam";
         int length = s.length();
+        boolean isPalindrome = true;
+
 
         for(int i=0;i<length/2;i++){
             if(s.charAt(i)!= s.charAt(length-1-i)){
-                System.out.println("not pallindrom");
-            }else System.out.println("pallindrom");
-
+                isPalindrome=false;
+                break;
+            }
+        }
+        if (isPalindrome) {
+            System.out.println("It's a palindrome");
+        } else {
+            System.out.println("Not a palindrome");
         }
 
-        }
+
+    }
 
 
     }
